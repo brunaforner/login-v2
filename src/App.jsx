@@ -1,8 +1,11 @@
-import { AppRouter } from './routes';
-import './assets/global.css'
-export const App = () => {
+import { AppRouter } from "./routes";
+import "./assets/global.css";
+import { AuthProvider } from "./context/AuthContext";
 
+export const App = () => {
   return (
-    <AppRouter />
+    <AuthProvider>
+      <AppRouter />
+    </AuthProvider>
   );
-}
+};
