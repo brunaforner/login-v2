@@ -29,7 +29,7 @@ export const Login = () => {
                         <img src={logoIMG} alt="Finanças" />
                     </span>
 
-                    <span className="login-form-title"> Bem vindo </span>
+                    <span className="login-form-title"> Bem vindo! </span>
 
                     <div className="wrap-input">
                         <input
@@ -63,6 +63,8 @@ export const Login = () => {
                             Criar conta.
                         </Link>
                     </div>
+
+                    <div class="text-rodape"> Venha participar do nosso time! Organize sua vida financeira com a gente.</div>
                 </form>
             </LayoutComponents>
         );
