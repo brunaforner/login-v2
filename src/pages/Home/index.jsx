@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { LayoutComponents } from "../../components/layoutComponents";
+import { LayoutComponents } from "../../components/LayoutComponents";
 import DespesasCadastrar from "./DespesasCadastro";
 import DespesasListar from "./DespesasListar";
 import { useState } from "react";

@@ -1,10 +1,9 @@
 /* eslint-disable react/jsx-no-undef */
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { LayoutComponents } from "../../components/layoutComponents";
-
+import { LayoutComponents } from "../../components/LayoutComponents";
 import logoIMG from "../../assets/logo.jpg";
-import { api } from "../../services/api";
+import { api } from "../../services/api.js";
 
 export const Register = () => {
     const [email, setEmail] = useState("");

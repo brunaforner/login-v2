@@ -2,7 +2,7 @@ import { Link, Navigate } from "react-router-dom";
 import { useState } from "react";
 
 import logoIMG from "../../assets/logo.jpg";
-import { LayoutComponents } from "../../components/layoutComponents";
+import { LayoutComponents } from "../../components/LayoutComponents";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 
