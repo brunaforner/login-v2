@@ -63,13 +63,16 @@ export const Register = () => {
 
                 <div className="container-login-form-btn">
                     <button type="submit" className="login-form-btn">
-                        Criar Conta
+                        
+                        <Link className="txt2" to="/home">
+                            Criar Conta
+                            </Link>
                     </button>
                 </div>
 
                 <div className="text-center">
                     <span className="txt1">Já possui conta? </span>
-                    <Link className="txt2" to="/">
+                    <Link className="txt2" to="/login">
                         Acessar com Email e Senha.
                     </Link>
                 </div>

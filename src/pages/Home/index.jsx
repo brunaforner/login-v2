@@ -6,6 +6,7 @@ import { getCurrentMonth, filterListByMonth } from '../../helpers/dateFilter';
 import { TableArea } from '../../components/TableArea';
 import { InfoArea } from '../../components/InfoArea';
 import { InputArea } from '../../components/InputArea';
+import logoIMG from "../../assets/logo.jpg";
 
 const Home = () => {
   const [list, setList] = useState(items);
@@ -14,16 +15,16 @@ const Home = () => {
   const [income, setIncome] = useState(0);
   const [expense, setExpense] = useState(0);
 
-  useEffect(()=>{
-    setFilteredList( filterListByMonth(list, currentMonth) );
+  useEffect(() => {
+    setFilteredList(filterListByMonth(list, currentMonth));
   }, [list, currentMonth]);
 
-  useEffect(()=>{
+  useEffect(() => {
     let incomeCount = 0;
     let expenseCount = 0;
 
-    for(let i in filteredList) {
-      if(categories[filteredList[i].category].expense) {
+    for (let i in filteredList) {
+      if (categories[filteredList[i].category].expense) {
         expenseCount += filteredList[i].value;
       } else {
         incomeCount += filteredList[i].value;
@@ -47,10 +48,32 @@ const Home = () => {
   return (
     <C.Container>
       <C.Header>
-        <C.HeaderText>OUT OF THE RED</C.HeaderText>
+        <C.Logo src={logoIMG} alt="Out of the red" />
+        <div className="container-login-form-btn">
+          <button type="submit" className="login-form-btn">
+          </button>
+        </div>
+        <div className="container-login-form-btn">
+          <button type="submit" className="login-form-btn">
+          </button>
+        </div>
+        <div className="container-login-form-btn">
+          <button type="submit" className="login-form-btn">
+          </button>
+        </div>
+        <div className="container-login-form-btn">
+          <button type="submit" className="login-form-btn">
+          </button>
+        </div>
+        <div className="container-login-form-btn">
+          <button type="submit" className="login-form-btn">
+          </button>
+        </div>
       </C.Header>
       <C.Body>
-        
+
+
+
         <InfoArea
           currentMonth={currentMonth}
           onMonthChange={handleMonthChange}

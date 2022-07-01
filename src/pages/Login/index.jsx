@@ -53,7 +53,9 @@ export const Login = () => {
 
                     <div className="container-login-form-btn">
                         <button type="submit" className="login-form-btn">
+                        <Link className="txt2" to="/home">
                             Login
+                            </Link>
                         </button>
                     </div>
 
